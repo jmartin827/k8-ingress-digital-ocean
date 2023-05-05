@@ -8,11 +8,11 @@ metadata:
 spec:
   tls:
     - hosts:
-        - echo1.josh-martin.dev
-        - echo2.josh-martin.dev
+        - echo1.example.com
+        - echo2.example.com
       secretName: echo-tls
   rules:
-  - host: echo1.josh-martin.dev
+  - host: echo1.example.com
     http:
         paths:
         - pathType: Prefix
@@ -22,7 +22,7 @@ spec:
               name: echo1
               port:
                 number: 80
-  - host: echo2.josh-martin.dev
+  - host: echo2.example.com
     http:
         paths:
         - pathType: Prefix
